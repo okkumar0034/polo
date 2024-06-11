@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunbeam Lahartara Model United Nations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #0056b3; /* UN blue */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #004080;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #002060;
+        }
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-right: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h3 {
+            font-size: 24px;
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar li a {
+            text-decoration: none;
+            color: #0056b3;
+            transition: color 0.3s ease;
+        }
+        .sidebar li a:hover {
+            color: #0072c6;
+        }
+        .content-container {
+            width: 75%;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+            position: relative;
+            border-radius: 8px;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: 48px;
+        }
+        .hero p {
+            font-size: 24px;
+        }
+        .hero button {
+            background-color: #0072c6;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .hero button:hover {
+            background-color: #0056b3;
+        }
+        .sections {
+            margin: 40px 0;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h3 {
+            font-size: 28px;
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        .section p {
+            font-size: 18px;
+        }
+        .committees, .board {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .committee, .board-member {
+            flex: 1 1 30%;
+            background-color: #f4f7f6;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .committee h4, .board-member h4 {
+            font-size: 22px;
+            color: #0056b3;
+        }
+        .committee a {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #0072c6;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .committee a:hover {
+            background-color: #0056b3;
+        }
+        .board-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sunbeam Lahartara Model United Nations</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#committees">Committees</a>
+    <a href="#board">Board Members</a>
+    <a href="#contact">Contact</a>
+    <a href="#register">Register</a>
+</nav>
+
+<div class="main-container">
+    <div class="sidebar">
+        <h3>News Bulletin</h3>
+        <ul>
+            <li><a href="#">Latest Updates on MUN</a></li>
+            <li><a href="#">Keynote Speaker Announced</a></li>
+            <li><a href="#">Workshops and Training</a></li>
+            <li><a href="#">Committee Agendas</a></li>
+            <li><a href="#">Important Dates</a></li>
+        </ul>
+    </div>
+
+    <div class="content-container">
+        <div class="container">
+            <div class="hero">
+                <h2>Welcome to Sunbeam Lahartara MUN</h2>
+                <p>Join us for an enlightening and engaging experience.</p>
+                <button onclick="window.location.href='https://forms.gle/your-google-form-link'">Register Now</button>
+            </div>
+
+            <div id="about" class="sections">
+                <div class="section">
+                    <h3>About</h3>
+                    <p>The Sunbeam Lahartara Model United Nations is a simulation of the UN where students step into the shoes of diplomats and engage in debates and negotiations on global issues.</p>
+                </div>
+            </div>
+
+            <div id="committees" class="sections">
+                <div class="section">
+                    <h3>Committees</h3>
+                    <div class="committees">
+                        <div class="committee">
+                            <h4>ECOSOC</h4>
+                            <p>Economic and Social Council</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="committee">
+                            <h4>UNHRC</h4>
+                            <p>United Nations Human Rights Council</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="committee">
+                            <h4>UNSC</h4>
+                            <p>United Nations Security Council</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="committee">
+                            <h4>WHO</h4>
+                            <p>World Health Organization</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="committee">
+                            <h4>UNICEF</h4>
+                            <p>United Nations International Children's Emergency Fund</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="board" class="sections">
+                <div class="section">
+                    <h3>Board Members</h3>
+                    <div class="board">
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 1">
+                            <h4>Member Name 1</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 2">
+                            <h4>Member Name 2</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 3">
+                            <h4>Member Name 3</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 4">
+                            <h4>Member Name 4</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 5">
+                            <h4>Member Name 5</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 6">
+                            <h4>Member Name 6</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 7">
+                            <h4>Member Name 7</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 8">
+                            <h4>Member Name 8</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 9">
+                            <h4>Member Name 9</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 10">
+                            <h4>Member Name 10</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 11">
+                            <h4>Member Name 11</h4>
+                            <p>Position</p>
+                        </div>
+                        <div class="board-member">
+                            <img src="https://via.placeholder.com/100" alt="Board Member 12">
+                            <h4>Member Name 12</h4>
+                            <p>Position</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="sections">
+                <div class="section">
+                    <h3>Contact</h3>
+                    <p>For any queries, please contact us at <a href="mailto:info@sunbeammun.com">info@sunbeammun.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Sunbeam Lahartara Model United Nations. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
